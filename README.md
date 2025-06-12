@@ -62,23 +62,23 @@ The project uses:
 ```
 Server started on port 1234
 New client connected: /127.0.0.1
-Alice joined the chat.
-Bob joined the chat.
+Shiraz joined the chat.
+Ahmed joined the chat.
 ```
 
 **Client 1 (Alice)**
 ```
 Enter your name:
-Alice
-Bob has joined the chat.
-Bob: Hello everyone!
+Shiraz
+Ahmed has joined the chat.
+Ahmed: Hello everyone!
 ```
 
 **Client 2 (Bob)**
 ```
 Enter your name:
-Bob
-Alice: Hi Bob!
+Ahmed
+Shiraz: Salam Ahmed!
 ```
 
 ---
