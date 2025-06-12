@@ -5,10 +5,14 @@ import java.util.concurrent.*;
 
 public class Server {
 
-    private static final int PORT = 1234;
+    private static int PORT;
+    //Thread safe CopyOnWriteArrayList is used from java.util.concurrent package
     private static final List<ClientModeller> clients = new CopyOnWriteArrayList<>();
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter a port number to run server");
+        PORT = scan.nextInt();
         System.out.println("Server started on port " + PORT);
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
